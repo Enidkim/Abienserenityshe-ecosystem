@@ -1,0 +1,127 @@
+/* --- css/style.css --- */
+
+/* 1. Global Reset & Variables */
+:root {
+  --primary-berry: #d60036;     /* Deep Red/Berry */
+  --light-berry: #ff2a5f;       /* Brighter Pinkish-Red */
+  --bg-dark: #121212;           /* Almost Black */
+  --bg-card: #1e1e1e;           /* Dark Grey */
+  --text-main: #f0f0f0;         /* Off-White */
+  --text-muted: #a0a0a0;        /* Light Grey */
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Body & Layout */
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. Header Styling */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background: linear-gradient(180deg, rgba(50,0,10,1) 0%, var(--bg-dark) 100%);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: var(--light-berry);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(214, 0, 54, 0.4);
+}
+
+header p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* 4. Main Content Area */
+main {
+  flex: 1; /* Pushes footer down */
+  width: 100%;
+  max-width: 480px; /* Mobile-app feel */
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content if short */
+}
+
+main p {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+/* 5. Buttons (The Link List) */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: var(--bg-card);
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Add a subtle accent border to the left of buttons */
+.btn {
+  border-left: 5px solid var(--primary-berry);
+}
+
+/* Hover Effects */
+.btn:hover {
+  background-color: var(--primary-berry);
+  border-color: var(--primary-berry);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(214, 0, 54, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* 6. Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--bg-dark);
+  border-top: 1px solid #222;
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: auto;
+}
+
+/* 7. Responsive Adjustments */
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 14px;
+  }
+}

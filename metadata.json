@@ -1,0 +1,6 @@
+{
+  "name": "Enid Kimberly",
+  "description": "Premium multi-studio brand ecosystem landing hub featuring Creative Lab, Boutique storefront, Wellness Community, and Lifestyle Media.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

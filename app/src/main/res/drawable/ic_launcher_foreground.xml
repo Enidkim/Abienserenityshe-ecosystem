@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Sophisticated Golden Gradient Definition -->
+    <aapt:attr name="android:fillColor">
+        <gradient
+            android:type="linear"
+            android:startX="20"
+            android:startY="20"
+            android:endX="88"
+            android:endY="88">
+            <item android:offset="0.0" android:color="#FFE5C158" /> <!-- Brand Gold -->
+            <item android:offset="0.5" android:color="#FFEADBBE" /> <!-- Sand Neutral -->
+            <item android:offset="1.0" android:color="#FFE8C5C8" /> <!-- Rose Gold -->
+        </gradient>
+    </aapt:attr>
+    
+    <!-- Geometric Sacred Alignment Diamond & Interlocking Lines Core -->
+    <path
+        android:strokeWidth="2.5"
+        android:strokeColor="#FFE5C158"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M 54,18 L 90,54 L 54,90 L 18,54 Z M 54,18 L 54,90 M 18,54 L 90,54 M 36,36 L 72,72 M 36,72 L 72,36" />
+        
+    <!-- Centered Focal Core Circle reflecting "Soul Reset Alignment" -->
+    <path
+        android:fillColor="#FFEADBBE"
+        android:pathData="M 54,46 C 58.4,46 62,49.6 62,54 C 62,58.4 58.4,62 54,62 C 49.6,62 46,58.4 46,54 C 46,49.6 49.6,46 54,46 Z" />
+        
+    <!-- Tiny inner star node -->
+    <path
+        android:fillColor="#FF0F1012"
+        android:pathData="M 54,50 L 55.5,52.5 L 58,54 L 55.5,55.5 L 54,58 L 52.5,55.5 L 50,54 L 52.5,52.5 Z" />
+</vector>
